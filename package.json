@@ -9,7 +9,6 @@
 		"format": "prettier 'src/**/*.ts' --write"
 	},
 	"devDependencies": {
-		"@types/n-readlines": "^1.0.3",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"eslint": "^8.28.0",
