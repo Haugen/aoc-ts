@@ -1,22 +1,22 @@
 {
-  "name": "aoc-2022",
-  "author": "WhiteFluffy",
-  "version": "0.0.1",
-  "license": "ISC",
-  "scripts": {
-    "dev": "ts-node src/run.ts",
-    "setup": "ts-node src/setup-day.ts",
-    "lint": "eslint . --ext .ts",
-    "format": "prettier 'src/**/*.ts' --write"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.45.0",
-    "@typescript-eslint/parser": "^5.45.0",
-    "eslint": "^8.28.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.3"
-  }
+	"name": "aoc-2022",
+	"author": "WhiteFluffy",
+	"version": "0.0.1",
+	"license": "ISC",
+	"scripts": {
+		"dev": "ts-node src/run.ts",
+		"setup": "ts-node src/setup-day.ts",
+		"lint": "eslint . --ext .ts",
+		"format": "prettier 'src/**/*.ts' --write"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^2.8.0",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.3"
+	}
 }
