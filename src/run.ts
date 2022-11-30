@@ -1,5 +1,5 @@
-let day: string;
-let task: string;
+let day: any;
+let task;
 
 try {
   day = process.argv[2].split("=")[1];
