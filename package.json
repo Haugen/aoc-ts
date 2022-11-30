@@ -4,8 +4,7 @@
 	"version": "0.0.1",
 	"license": "ISC",
 	"scripts": {
-		"dev": "ts-node src/run.ts",
-		"setup": "ts-node src/setup.ts",
+		"generate": "ts-node src/generate.ts",
 		"lint": "eslint . --ext .ts",
 		"format": "prettier 'src/**/*.ts' --write"
 	},
@@ -22,7 +21,6 @@
 	},
 	"dependencies": {
 		"axios": "^1.2.0",
-		"dotenv": "^16.0.3",
-		"n-readlines": "^1.0.1"
+		"dotenv": "^16.0.3"
 	}
 }
