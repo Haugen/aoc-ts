@@ -9,6 +9,7 @@
 		"plugin:@typescript-eslint/recommended"
 	],
 	"rules": {
-		"prettier/prettier": "error"
+		"prettier/prettier": "warn",
+		"no-empty": "warn"
 	}
 }
