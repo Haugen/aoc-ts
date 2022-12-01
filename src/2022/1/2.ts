@@ -15,7 +15,9 @@ inputArray.forEach((line) => {
 	}
 });
 
-totals.sort((a, b) => a - b);
-const total = totals.slice(-3).reduce((a, b) => a + b);
+const total = totals
+	.sort((a, b) => a - b)
+	.slice(-3)
+	.reduce((a, b) => a + b);
 
 console.log(total);
