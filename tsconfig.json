@@ -3,6 +3,6 @@
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"],
 	"compilerOptions": {
-		"noImplicitAny": true
+		"noImplicitAny": false
 	}
 }
