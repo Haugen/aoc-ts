@@ -12,11 +12,11 @@ const createRangedArray = (s: number, e: number): number[] => {
 inputArray.forEach((line) => {
 	const [first, second] = line.split(',');
 
-	const [fl, fh] = first.split('-');
-	const [sl, sh] = second.split('-');
+	const [fl, fh] = first.split('-').map((x) => parseInt(x));
+	const [sl, sh] = second.split('-').map((x) => parseInt(x));
 
-	const firstArr = createRangedArray(+fl, +fh);
-	const secondArr = createRangedArray(+sl, +sh);
+	const firstArr = createRangedArray(fl, fh);
+	const secondArr = createRangedArray(sl, sh);
 
 	for (const x of firstArr) {
 		if (secondArr.includes(x)) {

@@ -8,12 +8,12 @@ let count = 0;
 inputArray.forEach((line) => {
 	const [first, second] = line.split(',');
 
-	const [firstLow, firstHigh] = first.split('-');
-	const [secondLow, secondHigh] = second.split('-');
+	const [firstLow, firstHigh] = first.split('-').map((x) => parseInt(x));
+	const [secondLow, secondHigh] = second.split('-').map((x) => parseInt(x));
 
-	if (+secondLow >= +firstLow && +secondHigh <= +firstHigh) {
+	if (secondLow >= firstLow && secondHigh <= firstHigh) {
 		count++;
-	} else if (+firstLow >= +secondLow && +firstHigh <= +secondHigh) {
+	} else if (firstLow >= secondLow && firstHigh <= secondHigh) {
 		count++;
 	}
 });
