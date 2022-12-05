@@ -5,7 +5,7 @@ const inputArray = input.split('\n');
 
 const stacks: string[][] = Array.from({ length: 9 })
 	.fill(0)
-	.map((_) => []);
+	.map(() => []);
 
 inputArray.forEach((line, i) => {
 	if (i < 10) {
