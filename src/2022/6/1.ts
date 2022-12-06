@@ -12,12 +12,7 @@ for (const char of inputArray) {
 
 	if (currentFour.length > 4) {
 		currentFour.shift();
-	}
-
-	if (currentFour.length === 4) {
-		const fourSet = [...new Set(currentFour)];
-
-		if (fourSet.length === 4) {
+		if (new Set(currentFour).size === 4) {
 			break;
 		}
 	}

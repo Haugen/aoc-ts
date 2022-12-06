@@ -15,9 +15,6 @@ for (const char of inputArray) {
 
 	if (currentFour.length > 14) {
 		currentFour.shift();
-	}
-
-	if (currentFour.length === 14) {
 		if (new Set(currentFour).size === 14) {
 			break;
 		}
