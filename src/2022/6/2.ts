@@ -18,9 +18,7 @@ for (const char of inputArray) {
 	}
 
 	if (currentFour.length === 14) {
-		const fourSet = [...new Set(currentFour)];
-
-		if (fourSet.length === 14) {
+		if (new Set(currentFour).size === 14) {
 			break;
 		}
 	}
