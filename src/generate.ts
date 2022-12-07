@@ -37,7 +37,10 @@ try {
 			`https://adventofcode.com/${YEAR}/day/${day}/input`,
 			{ headers: { cookie: `session=${AOC_SESSION}` } }
 		);
-		fs.writeFileSync(path.resolve(folderPath, 'input.txt'), inputData.data);
+		fs.writeFileSync(
+			path.resolve(folderPath, 'input.txt'),
+			inputData.data.slice(0, -1) // Test if this comes back wo a blank line at the end.
+		);
 
 		// Copy template file.
 		fs.copyFileSync(
