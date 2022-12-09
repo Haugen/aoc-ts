@@ -42,7 +42,7 @@ const moveSnake = (pos1, pos2, i, cmd) => {
 	snake[i] = [s1x, s1y].join('#');
 	snake[i + 1] = [s2x, s2y].join('#');
 
-	if (i === 8) return tailPos.push(snake[i + 1]);
+	if (i === snake.length - 2) return tailPos.push(snake[i + 1]);
 
 	moveSnake(snake[i + 1], snake[i + 2], i + 1, cmd);
 };
