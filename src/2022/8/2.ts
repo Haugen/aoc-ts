@@ -20,7 +20,7 @@ for (const [rowNumber, row] of rows.entries()) {
 			const scores: number[] = [];
 
 			const rowFirst = trees.slice(0, colNumber).reverse();
-			const rowSecond = trees.slice(colNumber + 1, trees.length);
+			const rowSecond = trees.slice(colNumber + 1);
 
 			const colArray: number[] = [];
 			for (const row of rows) {
@@ -28,7 +28,7 @@ for (const [rowNumber, row] of rows.entries()) {
 			}
 
 			const colFirst = colArray.slice(0, rowNumber).reverse();
-			const colSecond = colArray.slice(rowNumber + 1, colArray.length);
+			const colSecond = colArray.slice(rowNumber + 1);
 
 			const arrsToCheck = [rowFirst, rowSecond, colFirst, colSecond];
 
