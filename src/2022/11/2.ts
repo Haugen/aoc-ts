@@ -1,3 +1,9 @@
+// Part 2 was intense. Started off with BigNumber JS, but yeah, that was not
+// going to help. The numbers get huge. I consulted ChatGPT who tought be about
+// LCM, the Least Common Multiple. The LCM in our case is the product of the
+// test case from every monkey. Once we have that, we can keep dividing the
+// numbers when they get too big.
+
 import fs from 'fs';
 import BigNumber from 'bignumber.js';
 
@@ -58,6 +64,7 @@ for (let j = 0; j < 10000; j++) {
 		while (monkey.items.length > 0) {
 			const item = BigNumber(monkey.items.shift() || 0);
 			let worryLevel = operate(item, monkey.operation);
+			// My final key to part 2. Use worryLevel % lcm for all items.
 			worryLevel = worryLevel.mod(lcm);
 			monkey.inspectedCount++;
 
